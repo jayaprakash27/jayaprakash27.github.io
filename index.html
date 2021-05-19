@@ -1,53 +1,57 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favourite Movies</title>
+    <title>Welcome to my page!!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
-    <header class="movies">
-    <h1>My Favourite Movies</h1>
+    <header>
+       <div class="line"> I'M JAYAPRAKASH</div> 
+        <label id="icon"></label>
     </header>
-    <div class="container">
-        <div class="card">
-            <div class="poster">
-                <img src="endgame.jpg" alt="Avengers : End Game(2019)">
-            </div>
-                <h4>Avengers : End Game(2019)</h4>
-            <div class="info">
-                <p>Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU).
-                    Produced by: Kevin Feige</p>
-                <a href="https://www.hotstar.com/in/movies/avengers-endgame/1260013556/watch?utm_source=gwa"><div class="watch">
-                    WATCH ON DISNEY+ HOTSTAR
-                </div></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="poster">
-                <img src="aquaman.jpg" alt="Aquaman(2018)">
-            </div>
-                <h4>Aquaman(2018)</h4>
-            <div class="info">
-                <p>Aquaman is a 2018 American superhero film based on the DC Comics character of the same name. Distributed by Warner Bros. Pictures, it is the sixth film in the DC Extended Universe (DCEU). The film was directed by James Wan, from a screenplay by David Leslie Johnson-McGoldrick and Will Beall.</p>
-                <a href="https://www.netflix.com/watch/81004278?source=35"><div class="watch">
-                    WATCH ON NETFLIX
-                </div></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="poster">
-                <img src="kong1.jpg" alt="Kong: Skull Island(2017)">
-            </div>
-                <h4>Kong: Skull Island(2017)</h4>
-            <div class="info">
-                <p>Kong: Skull Island is a 2017 American monster film directed by Jordan Vogt-Roberts. It is a reboot of the King Kong franchise and serves as the second film in Legendary's MonsterVerse, as well as the 11th film in the King Kong franchise. The film stars Tom Hiddleston, Samuel L.</p>
-                <a href="https://www.primevideo.com/dp/amzn1.dv.gti.7ab06b9e-709f-6dbb-ab9d-c2c825739d5f?autoplay=1&ref_=atv_cf_strg_wb"><div class="watch">
-                    WATCH ON PRIME VIDEO
-                </div></a>
-            </div>
-        </div>
+    <div class="card" id="content">
+        <div class="dp">
+        <img src="jay.jpg"> 
+    <div class="social">
+        <a class="soc" href="https://github.com/jayaprakash27"><i class="fab fa-github"></i></a>
+        <a class="soc" href="https://www.linkedin.com/in/jayaprakash-sahoo-759052202/"><i class="fab fa-linkedin"></i></a>
+        <a class="soc" href="https://www.instagram.com/jaya.prakash.sahoo/"><i class="fab fa-instagram"></i></a>
+        <a class="soc" href="https://www.facebook.com/aryakumar.jayaprakash.27/"><i class="fab fa-facebook"></i></a>
+    </div></div>
+        <span class="bio">
+        <h2>About me</h2>
+        <p class="text">
+            Hello everyone! I am <b>Jayaprakash Sahoo</b>, currently pursuing mu B.Tech degree
+            in Veer Surendra Sai University of Technology, Burla, Odisha.
+        </p>
+        <h2>Hobbies</h2>
+        <p class="text">
+            Watching movies, web series, short films and comedy shows.
+        </p>
+        <h2>Interests</h2>
+        <p class="text">
+            Web development, Video editing and coding.
+        </p></span>
     </div>
+    <script>
+        var body1 = document.getElementsByTagName('body')[0];
+        var icon = document.getElementById("icon");
+        var card = document.getElementById("content");
+        var text1 = document.getElementsByClassName("text")[0];
+        var text2 = document.getElementsByClassName("text")[1];
+        var text3 = document.getElementsByClassName("text")[2];
+        icon.addEventListener('click',function(){
+            icon.classList.toggle("dark");
+            body1.classList.toggle("dark1");
+            card.classList.toggle("dark2");
+            text1.classList.toggle("dark3");
+            text2.classList.toggle("dark3");
+            text3.classList.toggle("dark3");
+        })
+    </script>
 </body>
 </html>
